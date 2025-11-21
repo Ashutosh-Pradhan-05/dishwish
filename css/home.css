@@ -12,43 +12,126 @@
 }
 
 /* Default: 1 card per row (mobile) */
+/* Recipe Grid */
 .recipe-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 25px;
+  padding: 10px;
 }
 
-/* Tablet: 2 cards per row */
+/* Tablet */
 @media (min-width: 600px) {
   .recipe-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Laptop/Desktop: 3 cards per row */
+/* Laptop/Desktop */
 @media (min-width: 1024px) {
   .recipe-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* Card Styles */
 .card {
-  background: #fff;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  border-radius: 15px;
   padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #eee;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: 0.2s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-}
-
-.card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image inside Card */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+@media (max-width: 600px) {
+  .card img {
+    height: 250px;
+  }
+}
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Fallback Text */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-fallback {
+  display: none;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Titles and Description */
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.card small {
+  font-weight: 600;
+}
+
+.btn-view {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: linear-gradient(45deg, #f1865f, #f43067);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-view:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #f43067, #f1865f);
+  opacity: 0.9;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .card img,
+  .image-container {
+    height: 200px;
+  }
+
+  .btn-view {
+    width: 100%;
+    text-align: center;
+  }
 }

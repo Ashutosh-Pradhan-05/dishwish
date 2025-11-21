@@ -2,12 +2,11 @@ form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background: #fff;
+  background: linear-gradient(135deg, #f4efef, #1af4e2);
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #eee;
 }
-
 input,
 textarea,
 select {
@@ -36,22 +35,22 @@ select {
 
 /* Cancel button */
 .btn-cancel {
-  background: #d0d0d0;
-  color: #333;
+  background: #f41f1f;
+  color: white;
 }
 
 .btn-cancel:hover {
-  background: #bdbdbd;
+  background: #f46f6f;
 }
 
 /* Save button */
 .btn-save {
-  background: #f08a24;
-  color: white;
+  background: #2aaf10;
+  color: black;
 }
 
 .btn-save:hover {
-  background: #d6741c;
+  background: #3cef18;
 }
 
 /* Responsive: Stack vertically on small screens */

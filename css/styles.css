@@ -22,9 +22,6 @@
   font-weight: 700;
   color: #f08a24;
 }
-/* -----------------------------
-   MOBILE MENU
------------------------------ */
 .nav {
   display: flex;
   gap: 20px;
@@ -90,7 +87,7 @@
     display: inline-block;
     padding: 8px 16px;
     margin-left: 10px;
-    background: linear-gradient(45deg, #ff7a00, #8431de);
+    background: linear-gradient(45deg, #f1865f, #f43067);
     color: #fff;
     border-radius: 6px;
     text-decoration: none;
@@ -99,7 +96,7 @@
   }
 
   .nav-links .nav-link:hover {
-    background: linear-gradient(45deg, #6a11cb, #ff7a00);
+    background: linear-gradient(45deg, #f43067, #f1865f);
     transform: scale(1.05);
   }
 }
@@ -210,32 +207,30 @@
   }
 }
 
-/* Container for image + fallback text */
 .image-container {
   position: relative;
   width: 100%;
-  height: 160px; /* Adjust as needed */
-  background-color: #f0f0f0; /* Light gray background */
+  height: 160px;
+  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-radius: 8px; /* Optional: rounded corners */
+  border-radius: 8px;
 }
 
 /* Recipe image styling */
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Cover entire container */
+  object-fit: cover;
   display: block;
 }
 
-/* Fallback text when image is not found */
 .image-container .image-fallback {
-  display: none; /* Hidden by default */
-  color: #555; /* Text color */
-  font-size: 1rem; /* Text size */
+  display: none;
+  color: #555;
+  font-size: 1rem;
   font-weight: 500;
   text-align: center;
   padding: 10px;

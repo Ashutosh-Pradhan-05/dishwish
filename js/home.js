@@ -23,27 +23,27 @@ function renderRecipes() {
 
     return;
   }
-
   filtered.forEach((r) => {
     const card = document.createElement("div");
     card.className = "card";
-    card.onclick = () => (location.href = `recipe.html?id=${r.id}`);
 
-    const imageUrl = r.image || ""; // leave empty to show fallback text
+    const imageUrl = r.image || ""; // fallback handled below
     card.innerHTML = `
-      <div class="image-container">
-        <img src="${imageUrl}" alt="${r.title}">
-        <span class="image-fallback">Image Not Found</span>
-      </div>
-      <h3>${r.title}</h3>
-      <p>${r.description.substring(0, 60)}...</p>
-      <small>${r.difficulty} • ${r.prep} mins</small>
-    `;
+    <div class="image-container">
+      <img src="${imageUrl}" alt="${r.title}">
+      <span class="image-fallback">Image Not Found</span>
+    </div>
+    <h3>${r.title}</h3>
+    <p>${r.description.substring(0, 60)}...</p>
+    <small>${r.difficulty} • ${r.prep} mins</small>
+    <button class="btn-view">View Recipe</button>
+  `;
 
     const img = card.querySelector("img");
     const fallback = card.querySelector(".image-fallback");
+    const btn = card.querySelector(".btn-view");
 
-    // Show fallback text if image is missing or fails to load
+    // Fallback text if image not found
     if (!imageUrl) {
       img.style.display = "none";
       fallback.style.display = "flex";
@@ -51,6 +51,13 @@ function renderRecipes() {
     img.onerror = () => {
       img.style.display = "none";
       fallback.style.display = "flex";
+    };
+
+    // Click events
+    card.onclick = () => (location.href = `recipe.html?id=${r.id}`);
+    btn.onclick = (e) => {
+      e.stopPropagation(); // prevent triggering card onclick twice
+      location.href = `recipe.html?id=${r.id}`;
     };
 
     grid.appendChild(card);

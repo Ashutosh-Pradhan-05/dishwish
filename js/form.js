@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "You have unsaved changes. Are you sure you want to leave?"
         );
         if (!confirmLeave) {
-          e.preventDefault(); // Stop navigation
+          e.preventDefault();
         }
       }
     });
