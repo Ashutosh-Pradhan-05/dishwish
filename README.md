@@ -1,4 +1,4 @@
-# Recipe Manager Web App
+# Recipe Manager Web App (DISHWISH)
 
 A simple, interactive, and fully responsive **Recipe Manager Web App** built using **HTML, CSS, and JavaScript**.  
 This app allows users to **add, view, edit, delete, search, and filter recipes** with data persisted in the browser using **localStorage only**.
