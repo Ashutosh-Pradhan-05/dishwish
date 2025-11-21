@@ -5,7 +5,7 @@ This app allows users to **add, view, edit, delete, search, and filter recipes**
 
 ---
 
-## 🌟 Features
+## Features
 
 - **Home Page (Recipe List)**
   - Displays all recipes in a **grid layout** (3 cards per row on desktop, 1 card on mobile)
@@ -35,7 +35,7 @@ This app allows users to **add, view, edit, delete, search, and filter recipes**
 
 ---
 
-## 🚀 How to Run the App
+## How to Run the App
 
 Follow these steps to run the **Recipe Manager Web App** locally on your computer:
 
@@ -50,7 +50,7 @@ git clone https://github.com/yourusername/recipe-manager.git
 
 ```
 
-## 💾 Data Structure in `localStorage`
+## Data Structure in `localStorage`
 
 All recipes are stored under a single key: `recipes`.  
 Each recipe is a JSON object with the following structure:
@@ -79,7 +79,7 @@ Each recipe is a JSON object with the following structure:
 
 ```
 
-## ⚙️ Assumptions and Limitations
+## Assumptions and Limitations
 
 **Assumptions:**
 - Users are using a modern browser that supports **localStorage** and ES6 JavaScript.
@@ -95,7 +95,7 @@ Each recipe is a JSON object with the following structure:
 
 ---
 
-## ⚠️ Known Issues
+## Known Issues
 
 - If `localStorage` is manually corrupted, some features may break; a page reload may be required.
 - Large numbers of recipes may slightly slow down rendering.
@@ -105,14 +105,14 @@ Each recipe is a JSON object with the following structure:
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - Special thanks to [Pexels](https://www.pexels.com) for free recipe images.  
 - Inspired by modern recipe management apps and responsive web design principles.  
 
 ---
 
-## 📫 Contact
+## Contact
 
 **Ashutosh Pradhan**  
 - GitHub: [https://github.com/Ashutosh-Pradhan-05](https://github.com/Ashutosh-Pradhan-05)
@@ -121,7 +121,7 @@ Each recipe is a JSON object with the following structure:
 
 ---
 
-## 🎉 Thank You
+## Thank You
 
 Thank you for visiting this project! Feel free to fork, contribute, or give feedback.  
 
