@@ -16,7 +16,11 @@ function renderRecipes() {
   grid.innerHTML = "";
 
   if (filtered.length === 0) {
-    grid.innerHTML = `<p style="text-align:center; padding:20px;">No recipes found</p>`;
+    grid.innerHTML = `
+  <p style="text-align:center; padding:20px; font-size:18px; color:#ff5722; font-weight:600;">
+    🍽️ Oops! No delicious recipes match your search.
+  </p>`;
+
     return;
   }
 
