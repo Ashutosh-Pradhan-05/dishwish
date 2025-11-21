@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add / Edit Recipe</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">DISH<span style="color: black">WISH</span></div>
+
+      <nav class="nav nav-links" id="navMenu">
+        <span class="close-menu" id="closeMenu">X</span>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="form.html" class="nav-link">Add Recipe</a>
+      </nav>
+
+      <div class="menu-icon" id="menuToggle">☰</div>
+    </header>
+
+    <main class="main-content">
+      <h2 id="formTitle">Add Recipe</h2>
+
+      <form id="recipeForm">
+        <label>Title</label>
+        <input type="text" id="title" required />
+
+        <label>Description</label>
+        <textarea id="description" required></textarea>
+
+        <label>Ingredients (comma-separated)</label>
+        <textarea id="ingredients" required></textarea>
+
+        <label>Steps (comma-separated)</label>
+        <textarea id="steps" required></textarea>
+
+        <label>Preparation Time (in mins)</label>
+        <input type="number" id="prep" required />
+
+        <label for="difficulty">Recipe Difficulty</label>
+        <select id="difficulty" required>
+          <option value="" disabled selected>Choose Level</option>
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+
+        <label>Image URL (optional)</label>
+        <input type="text" id="image" />
+
+        <div class="button-row">
+          <button
+            type="button"
+            class="btn-cancel"
+            onclick="location.href='index.html'"
+          >
+            Cancel
+          </button>
+
+          <button type="submit" class="btn-save">Save Recipe</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Designed & Developed by Ashutosh Pradhan
+        <span class="separator">|</span> &copy; 2025 DISHWISH
+      </p>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/recipeService.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/ui.js"></script>
+  </body>
+</html>

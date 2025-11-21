@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Detail</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">DISH<span style="color: black">WISH</span></div>
+
+      <nav class="nav nav-links" id="navMenu">
+        <span class="close-menu" id="closeMenu">X</span>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="form.html" class="nav-link">Add Recipe</a>
+      </nav>
+
+      <div class="menu-icon" id="menuToggle">☰</div>
+    </header>
+
+    <main class="main-content">
+      <!-- Back Button -->
+      <button id="backButton" class="btn-back">Back</button>
+
+      <div id="recipeDetail">Loading...</div>
+    </main>
+
+    <footer class="footer">
+      <p>Designed & Developed by Ashutosh Pradhan | &copy; 2025 DISHWISH</p>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/recipeService.js"></script>
+    <script src="js/detail.js"></script>
+    <script src="js/ui.js"></script>
+  </body>
+</html>

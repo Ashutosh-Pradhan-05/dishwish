@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f08a24;
+}
+/* -----------------------------
+   MOBILE MENU
+----------------------------- */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Close button inside nav */
+.close-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background: #fff;
+    flex-direction: column;
+    align-items: start;
+    padding: 60px 20px;
+    gap: 20px;
+    border-left: 1px solid #eee;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .close-menu {
+    display: block;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .nav a {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+  }
+}
+/* Home and Add Recipe button design for large screen */
+
+/* Desktop view (width ≥ 768px) */
+@media screen and (min-width: 768px) {
+  .nav-links .nav-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #ff7043; /* Button color */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+
+  .nav-links .nav-link:hover {
+    background-color: #ff5722; /* Hover color */
+  }
+}
+
+/* Mobile view (width < 768px) keeps normal text or menu icon */
+@media screen and (max-width: 767px) {
+  .nav-links .nav-link {
+    display: block; /* or whatever you currently have for mobile menu */
+    padding: 10px;
+    margin: 0;
+    background: none;
+    color: #000;
+    border-radius: 0;
+  }
+}
+
+.main-content {
+  padding: 25px;
+  min-height: calc(100vh - 140px);
+  box-sizing: border-box;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #f08a24;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.btn-back:hover {
+  background: #d6741c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .btn-back {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+
+  /* NEW: ensure footer sits properly */
+  flex-shrink: 0;
+}
+
+/* Container for image + fallback text */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 160px; /* Adjust as needed */
+  background-color: #f0f0f0; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Recipe image styling */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover entire container */
+  display: block;
+}
+
+/* Fallback text when image is not found */
+.image-container .image-fallback {
+  display: none; /* Hidden by default */
+  color: #555; /* Text color */
+  font-size: 1rem; /* Text size */
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+}
