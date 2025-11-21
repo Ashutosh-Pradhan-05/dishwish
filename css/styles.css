@@ -157,9 +157,19 @@
   padding: 20px;
   text-align: center;
   color: #777;
-
-  /* NEW: ensure footer sits properly */
   flex-shrink: 0;
+}
+.footer-name {
+  color: #d6741c;
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  .separator {
+    display: none;
+  }
+  .footer-name {
+    font-weight: normal;
+  }
 }
 
 /* Container for image + fallback text */
