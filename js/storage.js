@@ -377,7 +377,308 @@ function initStorage() {
         prep: 60,
         difficulty: "Hard",
         image:
-          "https://images.pexels.com/photos/31692606/pexels-photo-31692606.jpeg",
+          "https://images.pexels.com/photos/6113820/pexels-photo-6113820.jpeg",
+      },
+      {
+        id: Date.now() + 3,
+        title: "Dal Fry",
+        description:
+          "A flavorful Indian lentil dish cooked with spices and tempered with aromatic herbs, suitable for 2 people.",
+        ingredients: [
+          [
+            "1/2 cup yellow moong dal or toor dal (washed and soaked for 15-20 minutes)",
+            "1 medium-sized onion",
+            "1 medium-sized tomato",
+            "2 garlic cloves",
+            "1-inch piece of ginger (approx. 10 grams)",
+            "1 fresh green chili",
+            "8-10 fresh coriander leaves",
+          ],
+          [
+            "1/2 tsp red chili powder",
+            "1/4 tsp turmeric powder",
+            "1/2 tsp cumin powder",
+            "1/2 tsp garam masala powder",
+            "1 tsp salt (adjust to taste)",
+          ],
+          [
+            "1/2 tsp cumin seeds",
+            "1/2 tsp mustard seeds",
+            "1 dried red chili",
+            "2 cloves",
+            "1 bay leaf",
+          ],
+          [
+            "1 tbsp ghee or cooking oil",
+            "1 and 1/2 cups water (approx. 375 ml)",
+          ],
+          [
+            "Gas stove & lighter (fully functional)",
+            "1 deep cooking pan",
+            "1 small bowl for onion",
+            "1 small bowl for tomato",
+            "1 small bowl for garlic and ginger",
+            "1 small bowl for green chili",
+            "1 small bowl for coriander leaves",
+            "1 small bowl for soaked dal",
+            "1 chopping board and 1 kitchen knife",
+            "1 flat plate (as lid)",
+            "1 spoon and 1 serving bowl",
+            "1 peeler (for peeling vegetables)",
+          ],
+        ],
+        steps: [
+          ["Place the chopping board on a clean, flat surface."],
+          ["Place a small bowl for soaked dal next to the chopping board."],
+          ["Wash the soaked dal under running water and place in the bowl."],
+          ["Place a small bowl for onion next to the chopping board."],
+          ["Peel the onion using the peeler if needed."],
+          ["Wash the peeled onion under running water."],
+          ["Chop the onion into small pieces and place in the onion bowl."],
+          ["Place a small bowl for tomato next to the chopping board."],
+          ["Wash the tomato under running water."],
+          ["Cut the tomato into small pieces and place in the tomato bowl."],
+          [
+            "Place a small bowl for garlic and ginger next to the chopping board.",
+          ],
+          ["Peel the garlic cloves."],
+          ["Chop garlic cloves into small pieces and place in garlic bowl."],
+          ["Peel the ginger piece using the peeler and wash it."],
+          [
+            "Chop the ginger into small pieces and place in garlic bowl with garlic.",
+          ],
+          ["Place a small bowl for green chili next to the chopping board."],
+          [
+            "Cut the green chili vertically into two halves and place in the bowl.",
+          ],
+          [
+            "Wash the coriander leaves, chop finely, and place in the coriander bowl.",
+          ],
+          ["Place deep cooking pan on the gas stove."],
+          ["Turn on the gas stove and ignite the flame using a lighter."],
+          ["Set the flame to medium."],
+          ["Add ghee or cooking oil into the pan and heat for 20-30 seconds."],
+          [
+            "Add whole spices (cumin seeds, mustard seeds, dried red chili, cloves, bay leaf) into the hot oil.",
+          ],
+          [
+            "Stir the whole spices for 30-40 seconds until aromatic and crackling.",
+          ],
+          [
+            "Add chopped onion into the pan and sauté for 4-5 minutes until golden brown.",
+          ],
+          [
+            "Add chopped garlic and ginger into the pan and stir for 2-3 minutes.",
+          ],
+          [
+            "Add chopped tomato into the pan and cook for 2-3 minutes until soft.",
+          ],
+          [
+            "Add red chili powder, turmeric powder, cumin powder, garam masala powder, and salt into the pan.",
+          ],
+          [
+            "Mix well and cook for 1-2 minutes until oil separates from the masala.",
+          ],
+          ["Add soaked dal and 1 and 1/2 cups water into the pan."],
+          [
+            "Mix everything well and increase flame to high to bring to a gentle boil.",
+          ],
+          [
+            "Once boiling, reduce flame to medium-low and cover with a flat plate as lid.",
+          ],
+          ["Cook for 15-20 minutes until dal is fully cooked and soft."],
+          ["Check consistency; if too thick, add a little water and mix well."],
+          ["Turn off the stove and wait 1-2 minutes."],
+          ["Garnish the dal with chopped coriander leaves."],
+          ["Serve hot with steamed rice or rotis."],
+        ],
+        prep: 50,
+        difficulty: "Medium",
+        image:
+          "https://images.pexels.com/photos/33430562/pexels-photo-33430562.jpeg",
+      },
+      {
+        id: Date.now() + 4,
+        title: "Veg Bread Sandwich",
+        description:
+          "A quick and healthy Indian-style vegetable sandwich with fresh veggies and spiced butter spread, suitable for 2 people.",
+        ingredients: [
+          [
+            "4 slices of white or whole wheat bread",
+            "1 small cucumber",
+            "1 small tomato",
+            "1 small carrot",
+            "1/4 cup cabbage (finely shredded)",
+            "2-3 fresh coriander leaves",
+          ],
+          [
+            "2 tbsp butter or margarine",
+            "1/2 tsp chaat masala",
+            "1/4 tsp black salt (optional)",
+            "1/4 tsp black pepper powder",
+            "1/2 tsp red chili powder (optional)",
+            "Salt to taste",
+          ],
+          [
+            "1 small bowl for spreading butter",
+            "1 small bowl for chopped vegetables",
+            "1 chopping board",
+            "1 kitchen knife",
+            "1 plate for assembling sandwiches",
+            "1 spatula or spoon",
+          ],
+        ],
+        steps: [
+          ["Place the chopping board on a clean, flat surface."],
+          ["Wash cucumber, tomato, carrot, and cabbage under running water."],
+          ["Peel the carrot using a peeler."],
+          ["Slice cucumber and tomato into thin rounds."],
+          ["Grate the carrot into fine shreds."],
+          ["Finely shred the cabbage."],
+          ["Chop coriander leaves and keep aside."],
+          ["Place a small bowl for butter next to the chopping board."],
+          ["Take 2 tbsp butter and soften it in the bowl."],
+          [
+            "Add chaat masala, black salt, black pepper powder, red chili powder (optional), and salt to taste into the butter.",
+          ],
+          ["Mix well to make a spiced butter spread."],
+          [
+            "Take two slices of bread and spread the spiced butter evenly on one side of each slice.",
+          ],
+          [
+            "On one slice, layer cucumber slices, tomato slices, grated carrot, shredded cabbage, and chopped coriander.",
+          ],
+          [
+            "Cover with the second buttered slice with the butter side facing the vegetables.",
+          ],
+          ["Press lightly to hold the sandwich together."],
+          [
+            "Repeat the process with the remaining two slices for the second sandwich.",
+          ],
+          ["Cut each sandwich diagonally into two triangles using a knife."],
+          ["Place sandwiches on a serving plate."],
+          ["Serve immediately with ketchup or green chutney as desired."],
+        ],
+        prep: 20,
+        difficulty: "Easy",
+        image:
+          "https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg",
+      },
+      {
+        id: Date.now() + 5,
+        title: "Paneer Masala",
+        description:
+          "A rich and flavorful Indian paneer curry cooked in a spiced tomato-onion gravy, suitable for 2 people.",
+        ingredients: [
+          [
+            "200 grams paneer (cubed)",
+            "1 medium-sized onion",
+            "1 medium-sized tomato",
+            "2 garlic cloves",
+            "1-inch piece of ginger (approx. 10 grams)",
+            "1 fresh green chili",
+            "8-10 fresh coriander leaves",
+          ],
+          [
+            "1/2 tsp red chili powder",
+            "1/2 tsp turmeric powder",
+            "1 tsp coriander powder",
+            "1/2 tsp garam masala powder",
+            "1/2 tsp cumin powder",
+            "1 tsp salt (adjust to taste)",
+          ],
+          [
+            "1/2 tsp cumin seeds",
+            "1/2 tsp mustard seeds",
+            "1 bay leaf",
+            "2 cloves",
+            "1/2 tsp kasuri methi (dry fenugreek leaves, optional)",
+          ],
+          ["2 tbsp cooking oil", "1/2 cup water (approx. 125 ml)"],
+          [
+            "Gas stove & lighter (fully functional)",
+            "1 deep cooking pan",
+            "1 small bowl for onion",
+            "1 small bowl for tomato",
+            "1 small bowl for garlic and ginger",
+            "1 small bowl for green chili",
+            "1 small bowl for coriander leaves",
+            "1 small bowl for paneer cubes",
+            "1 chopping board and 1 kitchen knife",
+            "1 flat plate (as lid)",
+            "1 spoon and 1 serving plate",
+            "1 peeler (for peeling vegetables)",
+          ],
+        ],
+        steps: [
+          ["Place the chopping board on a clean, flat surface."],
+          ["Place a small bowl for paneer cubes next to the chopping board."],
+          ["Cut paneer into small cubes and place in the bowl."],
+          ["Place a small bowl for onion next to the chopping board."],
+          ["Peel the onion using a peeler if needed."],
+          ["Wash the peeled onion under running water."],
+          ["Chop the onion into small pieces and place in the onion bowl."],
+          ["Place a small bowl for tomato next to the chopping board."],
+          ["Wash the tomato under running water."],
+          ["Cut the tomato into small pieces and place in the tomato bowl."],
+          [
+            "Place a small bowl for garlic and ginger next to the chopping board.",
+          ],
+          ["Peel garlic cloves."],
+          [
+            "Chop garlic cloves and ginger into small pieces and place in the garlic bowl.",
+          ],
+          ["Place a small bowl for green chili next to the chopping board."],
+          [
+            "Cut the green chili vertically into two halves and place in the bowl.",
+          ],
+          [
+            "Wash the coriander leaves, chop finely, and place in the coriander bowl.",
+          ],
+          ["Place deep cooking pan on the gas stove."],
+          ["Turn on the gas stove and ignite the flame using a lighter."],
+          ["Set the flame to medium."],
+          ["Add 2 tbsp cooking oil into the pan and heat for 20-30 seconds."],
+          [
+            "Add whole spices (cumin seeds, mustard seeds, bay leaf, cloves) into the hot oil.",
+          ],
+          ["Stir the spices for 30-40 seconds until aromatic and crackling."],
+          [
+            "Add chopped onion into the pan and sauté for 4-5 minutes until golden brown.",
+          ],
+          [
+            "Add chopped garlic and ginger into the pan and stir for 2-3 minutes.",
+          ],
+          [
+            "Add chopped tomato into the pan and cook for 2-3 minutes until soft and mushy.",
+          ],
+          [
+            "Add red chili powder, turmeric powder, coriander powder, cumin powder, garam masala powder, and salt into the pan.",
+          ],
+          [
+            "Mix well and cook for 1-2 minutes until oil separates from the masala.",
+          ],
+          [
+            "Add paneer cubes into the pan and mix gently with the masala for 2 minutes.",
+          ],
+          ["Add 1/2 cup water to make a thick gravy and mix well."],
+          [
+            "Cover the pan with a flat plate as lid and cook on medium-low flame for 5-7 minutes.",
+          ],
+          [
+            "Check consistency; if gravy is too thick, add a little more water and mix gently.",
+          ],
+          ["Sprinkle kasuri methi over the curry and mix lightly (optional)."],
+          ["Turn off the stove and wait 1-2 minutes."],
+          ["Garnish with chopped coriander leaves."],
+          [
+            "Transfer hot Paneer Masala into a serving plate and serve with roti, naan, or rice.",
+          ],
+        ],
+        prep: 60,
+        difficulty: "Hard",
+        image:
+          "https://images.pexels.com/photos/30858402/pexels-photo-30858402.jpeg",
       },
     ];
     localStorage.setItem(STORAGE_KEY, JSON.stringify(defaultRecipe));

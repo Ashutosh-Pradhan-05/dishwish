@@ -11,12 +11,6 @@
   flex: 1;
 }
 
-/* .recipe-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 20px;
-} */
-
 /* Default: 1 card per row (mobile) */
 .recipe-grid {
   display: grid;
