@@ -115,9 +115,9 @@ Each recipe is a JSON object with the following structure:
 ## 📫 Contact
 
 **Ashutosh Pradhan**  
-- GitHub: [https://github.com/yourusername](https://github.com/Ashutosh-Pradhan-05)
-- LinkedIn: [https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/ashutosh-pradhan05) 
-- X.com: [https://twitter.com/yourusername](https://x.com/Ashutoshtwitind)  
+- GitHub: [https://github.com/Ashutosh-Pradhan-05](https://github.com/Ashutosh-Pradhan-05)
+- LinkedIn: [https://www.linkedin.com/in/ashutosh-pradhan05](https://www.linkedin.com/in/ashutosh-pradhan05) 
+- X.com: [https://twitter.com/Ashutoshtwitind](https://x.com/Ashutoshtwitind)  
 
 ---
 
