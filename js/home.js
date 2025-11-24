@@ -18,7 +18,7 @@ function renderRecipes() {
   if (filtered.length === 0) {
     grid.innerHTML = `
   <p style="text-align:center; padding:20px; font-size:18px; color:#ff5722; font-weight:600;">
-    🍽️ Oops! No delicious recipes match your search.
+    🍽️ Oops! No delicious recipes found. Match your search or add recipe.
   </p>`;
 
     return;
@@ -54,10 +54,10 @@ function renderRecipes() {
     };
 
     // Click events
-    card.onclick = () => (location.href = `recipe.html?id=${r.id}`);
+    // card.onclick = () => (location.href = `../pages/recipe.html?id=${r.id}`);
     btn.onclick = (e) => {
-      e.stopPropagation(); // prevent triggering card onclick twice
-      location.href = `recipe.html?id=${r.id}`;
+      e.stopPropagation(); // optional here, since card has no click
+      location.href = `pages/recipe.html?id=${r.id}`;
     };
 
     grid.appendChild(card);

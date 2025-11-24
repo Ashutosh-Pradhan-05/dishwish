@@ -4,27 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Manager - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <header class="header">
       <div class="logo">DISH<span style="color: black">WISH</span></div>
-
       <nav class="nav nav-links" id="navMenu">
-        <span class="close-menu" id="closeMenu">x</span>
         <!-- Close icon -->
+        <span class="close-menu" id="closeMenu">x</span>
         <a href="index.html" class="nav-link">Home</a>
-        <a href="form.html" class="nav-link">Add Recipe</a>
+        <a href="pages/form.html" class="nav-link">Add Recipe</a>
       </nav>
-
+      <!-- Menu Icon -->
       <div class="menu-icon" id="menuToggle">☰</div>
     </header>
 
@@ -83,7 +81,7 @@
 
     <script src="js/storage.js"></script>
     <script src="js/recipeService.js"></script>
-    <script src="js/home.js"></script>
     <script src="js/ui.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>

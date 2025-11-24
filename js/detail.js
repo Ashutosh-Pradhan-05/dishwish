@@ -9,7 +9,7 @@ backButton.addEventListener("click", () => {
   if (document.referrer && document.referrer.includes("index.html")) {
     history.back();
   } else {
-    location.href = "index.html";
+    location.href = "../index.html";
   }
 });
 
@@ -31,17 +31,22 @@ if (!recipe) {
 
 
         <div class="actions">
-            <button class="btn-edit" onclick="location.href='form.html?id=${
+            <button class="btn-edit" onclick="alert('✏️ You are now editing this recipe!'); location.href='form.html?id=${
               recipe.id
-            }'">Edit</button>
+            }';">Edit</button>
             <button class="btn-delete" onclick="removeRecipe()">Delete</button>
         </div>
     `;
 }
 
 function removeRecipe() {
-  if (confirm("Delete this recipe?")) {
+  if (
+    confirm(
+      "⚠️ Do you want to delete this recipe? This action cannot be undone!"
+    )
+  ) {
     deleteRecipe(recipe.id);
-    location.href = "index.html";
+    alert("🗑️ Recipe deleted successfully!");
+    location.href = "../index.html";
   }
 }

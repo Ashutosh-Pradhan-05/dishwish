@@ -32,10 +32,15 @@ form.addEventListener("submit", (e) => {
     image: image.value,
   };
 
-  if (editId) updateRecipe(editId, recipeData);
-  else addRecipe(recipeData);
+  if (editId) {
+    updateRecipe(editId, recipeData);
+    alert("✅ Recipe updated successfully!");
+  } else {
+    addRecipe(recipeData);
+    alert("🎉 Recipe added successfully!");
+  }
 
-  location.href = "index.html";
+  location.href = "../index.html";
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -53,16 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
   cancelBtn.addEventListener("click", (e) => {
     if (isDirty) {
       const confirmLeave = confirm(
-        "You have unsaved changes. Are you sure you want to leave?"
+        "⚠️ You have unsaved changes. Do you really want to leave?"
       );
-      if (!confirmLeave) return; // Stay on page
+      if (!confirmLeave) return; // stay on page
     }
-    // Navigate to home if confirmed or form not dirty
-    location.href = "index.html";
+    alert("✖️ Action cancelled, returning to Home.");
+    location.href = "../index.html";
   });
 
   // Header Home link click confirmation
-  document.querySelectorAll('a[href="index.html"]').forEach((link) => {
+  document.querySelectorAll('a[href="../index.html"]').forEach((link) => {
     link.addEventListener("click", (e) => {
       if (isDirty) {
         const confirmLeave = confirm(
