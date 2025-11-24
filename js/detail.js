@@ -17,26 +17,43 @@ if (!recipe) {
   detailBox.innerHTML = "<p>Recipe not found.</p>";
 } else {
   detailBox.innerHTML = `
-        <img src="${recipe.image || "https://via.placeholder.com/300"}">
+    <div class="image-container">
+      <img src="${recipe.image || ""}" alt="${recipe.title}">
+      <span class="image-fallback">Image Not Found</span>
+    </div>
 
-        <h2>${recipe.title}</h2>
-        <p>${recipe.description}</p>
-        <p><strong>Preparation Time:</strong> ${recipe.prep} mins</p>
-        <p><strong>Difficulty Level:</strong> ${recipe.difficulty}</p>
-        <h3>Ingredient Lists for the Dish:</h3>
-        <ul>${recipe.ingredients.map((i) => `<li>${i}</li>`).join("")}</ul>
+    <h2>${recipe.title}</h2>
+    <p>${recipe.description}</p>
+    <p><strong>Preparation Time:</strong> ${recipe.prep} mins</p>
+    <p><strong>Difficulty Level:</strong> ${recipe.difficulty}</p>
 
-        <h3>Step by Step Process:</h3>
-        <ol>${recipe.steps.map((s) => `<li>${s}</li>`).join("")}</ol>
+    <h3>Ingredient Lists for the Dish:</h3>
+    <ul>${recipe.ingredients.map((i) => `<li>${i}</li>`).join("")}</ul>
 
+    <h3>Step by Step Process:</h3>
+    <ol>${recipe.steps.map((s) => `<li>${s}</li>`).join("")}</ol>
 
-        <div class="actions">
-            <button class="btn-edit" onclick="alert('✏️ You are now editing this recipe!'); location.href='form.html?id=${
-              recipe.id
-            }';">Edit</button>
-            <button class="btn-delete" onclick="removeRecipe()">Delete</button>
-        </div>
-    `;
+    <div class="actions">
+        <button class="btn-edit" onclick="alert('✏️ You are now editing this recipe!'); location.href='form.html?id=${
+          recipe.id
+        }'">Edit</button>
+        <button class="btn-delete" onclick="removeRecipe()">Delete</button>
+    </div>
+  `;
+
+  // Handle broken or missing image
+  const img = detailBox.querySelector("img");
+  const fallback = detailBox.querySelector(".image-fallback");
+
+  if (!recipe.image) {
+    img.style.display = "none";
+    fallback.style.display = "flex";
+  }
+
+  img.onerror = () => {
+    img.style.display = "none";
+    fallback.style.display = "flex";
+  };
 }
 
 function removeRecipe() {
