@@ -62,7 +62,7 @@ DISHWISH/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/username/DishWish.git
+git clone https://github.com/Ashutosh-Pradhan-05/dishwish.git
 cd DishWish
 ```
 
