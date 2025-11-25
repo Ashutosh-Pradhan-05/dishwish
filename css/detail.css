@@ -73,8 +73,7 @@
 }
 
 .actions .btn-edit {
-  background: linear-gradient(135deg, #fbe625, #a8ff78);
-  color: #000;
+  background-color: gold;
 }
 
 .actions .btn-edit:hover {

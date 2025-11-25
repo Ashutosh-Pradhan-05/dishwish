@@ -43,7 +43,6 @@ select {
   border: 1px solid black;
   border-radius: 8px;
   font-size: 1rem;
-  transition: all 0.3s ease;
   outline: none;
   background-color: transparent;
 }
@@ -52,7 +51,8 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(141, 140, 140, 0.7);
+  border: 2px solid black;
 }
 
 /* Placeholder styling */
