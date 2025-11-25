@@ -31,7 +31,7 @@ function renderRecipes() {
     card.innerHTML = `
     <div class="image-container">
       <img src="${imageUrl}" alt="${r.title}">
-      <span class="image-fallback">Image Not Found</span>
+      <span class="image-fallback">Image Not Available</span>
     </div>
     <h3>${r.title}</h3>
     <p>${r.description.substring(0, 60)}...</p>

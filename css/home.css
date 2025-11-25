@@ -64,10 +64,11 @@
 @media (max-width: 600px) {
   .card img {
     height: 250px;
+    transform: scale(1.08);
   }
 }
 .card img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* Fallback Text */
@@ -77,7 +78,7 @@
   height: 200px;
   overflow: hidden;
   border-radius: 12px;
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #bbf69c, #0b956c);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +86,6 @@
 
 .image-fallback {
   display: none;
-  color: #555;
   font-weight: 600;
 }
 

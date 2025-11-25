@@ -120,7 +120,7 @@
   }
 }
 
-/* CSS for Wrong image URL or empty url, Image not Found Box will show insted of image */
+/* CSS for Wrong image URL or empty url, Image not Available Box will show insted of image */
 .image-container {
   position: relative;
   width: 100%;
@@ -143,8 +143,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  background: #eee;
-  color: #ff5722;
+  background: linear-gradient(135deg, #bbf69c, #0b956c);
   font-weight: bold;
   border-radius: 8px;
   font-size: 18px;

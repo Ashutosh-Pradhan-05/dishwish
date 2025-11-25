@@ -40,7 +40,7 @@ function renderRecipes(recipes) {
     card.innerHTML = `
             <div class="image-container">
                 <img src="${imageUrl}" alt="${recipe.title}">
-                <span class="image-fallback">Image Not Found</span>
+                <span class="image-fallback">Image Not Available</span>
             </div>
             <h3>${recipe.title}</h3>
             <p>${recipe.description}</p>

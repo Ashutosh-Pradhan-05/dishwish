@@ -19,7 +19,7 @@ if (!recipe) {
   detailBox.innerHTML = `
     <div class="image-container">
       <img src="${recipe.image || ""}" alt="${recipe.title}">
-      <span class="image-fallback">Image Not Found</span>
+      <span class="image-fallback">Image Not Available</span>
     </div>
 
     <h2>${recipe.title}</h2>
