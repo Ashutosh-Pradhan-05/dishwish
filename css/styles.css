@@ -154,15 +154,22 @@
   width: 100%;
   background: linear-gradient(135deg, #0da58f, #83ecaf);
   padding: 20px 10px;
-  text-align: center;
-  color: #fff;
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
 }
 
-.footer-text {
+.footer-info {
+  text-align: center;
+}
+
+.footer-line1,
+.footer-line2 {
+  margin: 0;
   font-size: 15px;
   line-height: 1.5;
-  margin-bottom: 12px;
 }
 
 .footer-name {
@@ -170,12 +177,16 @@
   font-weight: 700;
 }
 
+/* Brand Styles */
 .footer-brand {
-  font-weight: 900;
+  font-weight: 800;
+}
+
+.brand-dish {
   color: #f08a24;
 }
 
-.footer-brand span {
+.brand-wish {
   color: #000;
 }
 
@@ -188,27 +199,49 @@
 
 .social-link {
   font-size: 22px;
-  color: #ffffff;
+  color: #000;
   transition: 0.3s ease;
 }
 
 .social-link:hover {
+  color: #ffffff;
   transform: scale(1.15);
-  color: #000;
 }
 
-/* MOBILE RESPONSIVE */
-@media (max-width: 480px) {
-  .separator {
-    display: none;
+/* DESKTOP & TABLET */
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .footer-text {
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-line1::after {
+    content: " | © 2025 All Rights Reserved | ";
+    font-weight: 600;
+  }
+
+  .footer-line2 {
+    display: inline; /* Only display brand in desktop */
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .footer-line1,
+  .footer-line2 {
+    display: block;
     font-size: 14px;
   }
 
-  .social-link {
-    font-size: 26px;
+  .footer-line1::after {
+    content: ""; /* remove desktop pseudo content */
   }
 }
 
